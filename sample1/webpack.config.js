@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports={
     mode : 'development',
@@ -17,13 +18,19 @@ module.exports={
                     {
                         loader : 'file-loader',
                         options : {
-                            publicPath : '../dist'
+                            // publicPath : '../dist'
+                            name : '[name].[ext]?[hash]', // 파일명과 확장자으로 쓰고 싶을때
                         },
                     }
                 ]
             }
         ]
     },
+    plugins : [
+        new HtmlWebpackPlugin({
+            template : './src/index.html'
+        }),
+    ],
     output : {
         path : path.resolve('./dist'), 
         filename : '[name].js',
