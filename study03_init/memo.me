@@ -1,0 +1,40 @@
+# 함께 번들링 하려면, 라이브러리를 로컬에서 설치해야 합니다.
+프로덕션 번들에 번들로 제공될 패키지
+- npm install xxx --save
+개발 목적 패키치 설치
+- npm install xxx --save-dev
+
+#트랜스 파일
+이전 브라우저에서도 실행할수 있도록 변환하는 작업을 말함.
+
+#webpack 트랜스파일
+import, export
+
+#babel 트랜스파일러
+웹팩의 로더 시스템
+
+#webpack.config.js 실행 방법
+터미널에서 npx webpack --config webpack.config.js
+
+# NPM script
+package.json
+
+
+#webpack  핵심 개념
+entry
+
+-
+output 
+-생성된 번들을 내보브는 위치/이름
+loaders 
+-webpack은 기본적으로 js,json 파일만 이해한다.
+로더를 사용하면..webpack이 다른 유형의 파일을 처리하거나,
+그들을 유효한 모듈로 변환하여 애플리케이션에서 사용
+-변환이 필요한 파일을들을 식별하는 test속성
+-변환을 수행하는데 사용되는 로더를 가리키는 use속성
+plugins
+modes
+browser compatibility
+
+
+
