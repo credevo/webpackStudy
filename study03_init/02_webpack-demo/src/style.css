@@ -1,4 +1,23 @@
+/* .hello {
+  color: red;
+  background: url("./icon.png");
+} */
+
+@font-face {
+  font-family: "Ansungtangmyun-Bold";
+  src: url("font/Ansungtangmyun-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ansungtangmyun-ESG";
+  src: url("font/Ansungtangmyun-ESG.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .hello {
   color: red;
+  font-family: "Ansungtangmyun-Bold";
   background: url("./icon.png");
 }
